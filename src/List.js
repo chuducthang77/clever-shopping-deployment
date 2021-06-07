@@ -10,16 +10,16 @@ const List = ({ items, removeItem, editItem }) => {
           <article className="grocery-item" key={id}>
             <p className="title">{title}</p>
             <div className="btn-container">
-              <button type="button" className="edit-btn" onClick={() => editItem(id)}>
+              {editItem && (<button type="button" className="edit-btn" onClick={() => editItem(id)}>
                 Edit
-              </button>
-              <button
+              </button>)}
+              {removeItem && (<button
                 type="button"
                 className="delete-btn"
                 onClick={() => removeItem(id)}
               >
                 Delete
-              </button>
+              </button>)}
             </div>
           </article>
         );
