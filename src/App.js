@@ -85,7 +85,7 @@ function App() {
         Note: ...alert means pass all the property
         Note: the list */}
         {alert.show && <Alert {...alert} removeAlert={showAlert} list={list} />}
-        <h3>Grocery bud</h3>
+        <h3>Shopping List</h3>
         <div className="from-control">
           {/* Let the user type in the grocery */}
           <input

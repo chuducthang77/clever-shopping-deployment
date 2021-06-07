@@ -1,3 +1,4 @@
 How to deploy to the website using netlify
 
 npm run build
+'Must': "build": "CI= react-scripts build"
