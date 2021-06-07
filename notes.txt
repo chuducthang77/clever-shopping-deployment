@@ -1,0 +1,3 @@
+How to deploy to the website using netlify
+
+npm run build
